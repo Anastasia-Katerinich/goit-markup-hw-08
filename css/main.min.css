@@ -536,6 +536,7 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1345,6 +1346,7 @@ footer {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: left;
   text-transform: uppercase;
   color: #fff;
 }
@@ -1601,17 +1603,29 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .mobile-social__item {
   margin-right: 10px;
 }
-.mobile-social__item:last-child {
-  margin-bottom: 0;
+@media (max-width: 480px) {
+  .mobile-social__item {
+    margin-bottom: 10px;
+  }
+  .mobile-social__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 .mobile-social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+  -ms-flex-direction: inherit;
+  flex-direction: inherit;
+  width: 100%;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
