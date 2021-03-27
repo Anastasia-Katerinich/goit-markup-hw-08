@@ -1,4 +1,4 @@
-.link-prime__nav {
+.site-nav__logo {
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -6,10 +6,10 @@
   margin-left: 0;
 }
 
-.link-prime__nav,
+.site-nav__logo,
 .site-nav__colortext,
-.link-prime-footer__adr,
-.colortext-footer__adr {
+.footer-adr__logo,
+.footer-adr__colortext {
   font-family: $secondary-font;
   font-weight: 700;
   font-size: 26px;
@@ -17,12 +17,12 @@
   letter-spacing: 0.03em;
 }
 
-.site-nav__logo,
+.site-nav__colortext,
 .footer-adr__logo {
   color: $blue-text;
 }
 
-.site-nav__colortex {
+.site-nav__logo {
   color: $black-text;
 }
 

@@ -22,7 +22,7 @@
       <div class="container container-menu">
         <nav class="site-nav">
           <a class="site-nav__logo" href="./index.html"
-            >Web<span class="site-nav__colortext">Studio</span></a
+            ><span class="site-nav__colortext">Web</span>Studio</a
           >
           <ul class="site-nav__list">
             <li class="site-nav__item">
@@ -36,7 +36,7 @@
               <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Контакты</a>
+              <a class="site-nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -44,10 +44,10 @@
           <li class="contacts-header__item">
             <a
               class="contacts-header__link"
-              aria-label="icon-envelope"
+              aria-label="envelope"
               href="mailto:info@devstudio.com"
             >
-              <svg class="contacts-icon__header" width="16" height="12">
+              <svg class="contacts-header__icon" width="16" height="12">
                 <use href="./images/icon.svg#icon-envelope-1"></use>
               </svg>
               info@devstudio.com</a
@@ -56,23 +56,83 @@
           <li class="contacts-header__item">
             <a
               class="contacts-header__link"
-              aria-label="icon-smartphone"
+              aria-label="telephone"
               href="tel:+380961111111"
             >
-              <svg class="contacts-icon__header" width="10" height="16">
+              <svg class="contacts-header__icon" width="10" height="16">
                 <use href="./images/icon.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-menu" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <div>
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <a
+                class="mobile-menu__link mobile-menu__link--current"
+                href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-contacts">
+            <li class="mobile-contacts__item">
+              <a class="mobile-contacts__link" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-contacts__item">
+              <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <button class="menu-toggle js-close-menu">
+          <svg class="icon-menu-close" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open type="button" class="button-one">
+          <button data-modal-open type="button" class="button button-one">
             Заказать услугу
           </button>
         </div>
@@ -234,7 +294,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icon.svg#icon-instagram-2-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -245,7 +305,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icon.svg#icon-twitter-1-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -256,7 +316,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icon.svg#icon-facebook-1-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -267,7 +327,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icon.svg#icon-linkedin-1-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -311,7 +371,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icon.svg#icon-instagram-2-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -322,7 +382,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icon.svg#icon-twitter-1-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -333,7 +393,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icon.svg#icon-facebook-1-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -344,7 +404,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icon.svg#icon-linkedin-1-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -391,7 +451,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icon.svg#icon-instagram-2-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -402,7 +462,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icon.svg#icon-twitter-1-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -413,7 +473,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icon.svg#icon-facebook-1-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -424,7 +484,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icon.svg#icon-linkedin-1-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -468,7 +528,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icon.svg#icon-instagram-2-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -479,7 +539,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icon.svg#icon-twitter-1-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -490,7 +550,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icon.svg#icon-facebook-1-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -501,7 +561,7 @@
                       href=""
                     >
                       <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icon.svg#icon-linkedin-1-1"></use>
                       </svg>
                     </a>
                   </li>
