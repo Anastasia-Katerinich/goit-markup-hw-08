@@ -1,7 +1,11 @@
 /* "ОСОБЕННОСТИ" */
 
 .features {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @media (min-width: $desktop) {
+    padding: 94px 0;
+  }
 }
 
 .features-list {
@@ -10,11 +14,36 @@
 }
 
 .features-list__item {
-  margin-right: 30px;
-  flex-basis: calc((100% - 90px) / 4);
+  margin-bottom: 30px;
 
   &:last-child {
-    margin-right: 0px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet) {
+    margin-right: 30px;
+    width: calc((100% - 60px) / 2);
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    margin-bottom: 0;
+
+    &:nth-child(2n) {
+      margin-right: 30px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -28,7 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
+
   height: 120px;
   margin-bottom: 30px;
   background-color: $grey;

@@ -5,12 +5,35 @@
 }
 
 .container-adr {
-  display: flex;
-  align-items: baseline;
+  @media (max-width: 767px) {
+    display: block;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .footer-adr {
-  margin-right: 70px;
+  @media (max-width: 767px) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 165px;
+    margin-left: 76px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 70px;
+  }
+}
+
+.address {
+  margin-bottom: 60px;
 }
 
 .address__text {
@@ -32,7 +55,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: $wt-op60;
+  color: $white-text-op60;
 
   transition: color 250ms $anime-function;
 
@@ -42,12 +65,19 @@
   }
 }
 
-/* ПРИСОЕДИНЯЙТЕСЬ */
+/* Присоединяйтесь */
 
 .subscription {
-  width: 206px;
-  height: 80px;
-  margin-right: 93px;
+  display: block;
+  text-align: center;
+  @media (min-width: $tablet) {
+    align-items: baseline;
+  }
+  @media (min-width: $desktop) {
+    width: 206px;
+    height: 80px;
+    margin-right: 93px;
+  }
 }
 
 .sub__title {
@@ -57,13 +87,23 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #fff;
+  color: $white-text;
 }
 
 .sub__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 767px) {
+    display: inline-flex;
+    width: 206px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    width: 206px;
+  }
 }
 
 .sub__link {
@@ -98,10 +138,19 @@
   }
 }
 
-/*  ПОДПИШИТЕСЬ НА РАССЫЛКУ */
+/*  Форма - Подпишитесь на рассылку */
 
 .signup-form {
-  width: 570px;
+  @media (min-width: $mobile) and (max-width: 1199px) {
+    display: block;
+    width: 450px;
+    text-align: center;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 570px;
+  }
 }
 
 .signup-form__title {
@@ -118,13 +167,13 @@
   width: 354px;
   height: 50px;
   padding: 15px;
-  margin-right: 12px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   align-items: center;
   letter-spacing: 0.03em;
-  color: $wt-op60;
+  color: $white-text-op60;
   background-color: $lightblack;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -134,6 +183,15 @@
   &:focus {
     outline: none;
     border-color: $blue-text;
+  }
+  @media (max-width: 1199px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 354px;
+    margin-right: 12px;
   }
 }
 
@@ -155,8 +213,4 @@
   right: 28px;
   fill: $white-text;
   align-items: center;
-}
-
-footer {
-  background-color: $lightblack;
 }
