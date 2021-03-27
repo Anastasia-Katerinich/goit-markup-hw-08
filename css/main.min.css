@@ -236,6 +236,9 @@ footer {
 .contacts-header {
   display: none;
 }
+.contacts-header {
+  display: none;
+}
 @media (min-width: 768px) {
   .contacts-header {
     display: block;
@@ -315,15 +318,6 @@ footer {
   }
   .contacts-header__item:last-child {
     margin-right: 0px;
-  }
-}
-.contacts-header__icon {
-  margin-left: auto;
-  margin-top: 10px;
-}
-@media (min-width: 768px) {
-  .contacts-header__icon {
-    display: none;
   }
 }
 .hero {

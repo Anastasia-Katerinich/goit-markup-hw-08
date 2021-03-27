@@ -307,7 +307,7 @@ footer {
   }
 }
 
-.contacts-icon__header {
+.contacts-header__icon {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -366,17 +366,6 @@ footer {
 
   .contacts-header__item:last-child {
     margin-right: 0px;
-  }
-}
-
-.contacts-header__icon {
-  margin-left: auto;
-  margin-top: 10px;
-}
-
-@media (min-width: 768px) {
-  .contacts-header__icon {
-    display: none;
   }
 }
 
